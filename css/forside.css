@@ -1,0 +1,103 @@
+section {
+  padding: 1rem 5%;
+  min-height: 100vh;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.home .content {
+  flex: 1 1 40rem;
+  animation: moveDown 1s ease-in-out forwards;
+}
+
+.home .content .hi {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+}
+
+.home .content h3 {
+  font-size: 3.5rem;
+  color: #111;
+  text-transform: uppercase;
+}
+
+.home .content h3 span {
+  text-transform: uppercase;
+}
+
+.home .content .info {
+  font-size: 2.3rem;
+  color: #111;
+  padding: 0.5rem 0;
+}
+
+.home .content .text {
+  font-size: 1.3rem;
+  color: #666;
+  padding: 0.5rem 0;
+}
+
+/* media queries  */
+
+@media (max-width: 1500px) {
+  .home .content {
+    flex: 1 1 40rem;
+    animation: moveDown 1s ease-in-out forwards;
+    margin-top: -10rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .home .content {
+    flex: 1 1 40rem;
+    animation: moveDown 1s ease-in-out forwards;
+    margin-top: -15rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 70%;
+  }
+
+  .home .content {
+    flex: 1 1 40rem;
+    animation: moveDown 1s ease-in-out forwards;
+    margin-top: -20rem;
+  }
+
+  .experience .box-container .box {
+    padding-right: 0;
+  }
+
+  .navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 0;
+    height: 70px;
+  }
+}
+
+@keyframes introLoad {
+  from {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes moveDown {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
