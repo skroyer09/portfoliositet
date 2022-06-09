@@ -5,10 +5,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --main-color: #fa0a0a;
-}
-
 body {
   background: #faea10;
   background: -moz-linear-gradient(45deg, #faea10 0%, #e600ff 100%);
@@ -18,16 +14,82 @@ body {
   background-attachment: fixed;
 }
 
+.button {
+  border-radius: 3px;
+  background-color: #f4511e00;
+  border: none;
+  font-size: 12px;
+  padding: 13px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: -8px;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+/* dark-mode */
+
+.dark-mode {
+  background: #1b565c;
+  background: -moz-linear-gradient(45deg, #1b565c 0%, #070f11 100%);
+  background: -webkit-linear-gradient(45deg, #1b565c 0%, #070f11 100%);
+  background: linear-gradient(45deg, #1b565c 0%, #070f11 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.dark-mode .navbar {
+  background-color: black;
+}
+
+.dark-mode header {
+  background-color: black;
+}
+
+.dark-mode h1,
+h6 {
+  color: white;
+}
+
+.dark-mode h6 {
+  color: white;
+}
+
+.dark-mode h3 {
+  color: #efc862;
+}
+
+.dark-mode h2 {
+  color: #efc862;
+}
+
+.dark-mode .bar {
+  background-color: rgb(255, 255, 255);
+}
+
+.dark-mode .nav-links {
+  background-color: rgb(0, 0, 0);
+}
+
+/* end of dark-mode */
+
 /* Font styling */
 main {
   margin: 0 auto;
   max-width: 1200px;
 }
 
-p,
-h2,
-h3 {
+p {
   font-family: "poppins", sans-serif;
+  color: rgb(252, 252, 252);
+}
+
+h3,
+h2 {
+  font-family: "poppins", sans-serif;
+  color: #111;
 }
 
 h1 {
@@ -47,6 +109,7 @@ h6 {
   font-weight: 400;
   font-style: normal;
   line-height: 30px;
+  padding-top: 20px;
 }
 
 /* Styling af navigationbar og logo */
@@ -66,8 +129,8 @@ h6 {
 }
 
 .nav-links li h6:hover {
-  color: red;
-  background-color: rgba(221, 221, 221, 0.142);
+  color: #efc862;
+  transform: scale(1.1);
 }
 
 .logo {
@@ -75,10 +138,12 @@ h6 {
   cursor: pointer;
   transition: all 0.3s ease 0s;
   padding-top: 20px;
+  padding-left: 20px;
 }
 
 .logo h1:hover {
-  color: red;
+  color: #efc862;
+  transform: scale(1.1);
 }
 .logo h1 {
   display: inline-block;
@@ -87,10 +152,14 @@ h6 {
 }
 
 .navbar {
-  max-width: 1280px;
-  margin: 0 auto;
-  font-size: 0;
-  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0.4rem;
+  gap: 13px;
+  overflow-x: auto;
 }
 
 /* Burger Menu */
@@ -115,6 +184,12 @@ h6 {
     margin: 0 auto;
     font-size: 0;
     height: 70px;
+  }
+
+  .nav-links li h6:hover {
+    color: #efc862;
+    background-color: rgba(221, 221, 221, 0.142);
+    transform: scale(1.1);
   }
 }
 
