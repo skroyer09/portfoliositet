@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 body {
   background: #faea10;
   background: -moz-linear-gradient(45deg, #faea10 0%, #e600ff 100%);
@@ -16,7 +21,7 @@ body {
 
 .button {
   border-radius: 3px;
-  background-color: #f4511e00;
+  background-color: #ffffff00;
   border: none;
   font-size: 12px;
   padding: 13px;
@@ -32,37 +37,48 @@ body {
 /* dark-mode */
 
 .dark-mode {
-  background: #1b565c;
-  background: -moz-linear-gradient(45deg, #1b565c 0%, #070f11 100%);
-  background: -webkit-linear-gradient(45deg, #1b565c 0%, #070f11 100%);
-  background: linear-gradient(45deg, #1b565c 0%, #070f11 100%);
+  background: #323132;
+  background: -moz-linear-gradient(45deg, #323132 0%, #121212 100%);
+  background: -webkit-linear-gradient(45deg, #323132 0%, #121212 100%);
+  background: linear-gradient(45deg, #323132 0%, #121212 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 .dark-mode .navbar {
-  background-color: black;
+  background-color: #0a0a0aff;
 }
 
 .dark-mode header {
-  background-color: black;
+  background-color: #0a0a0aff;
 }
 
-.dark-mode h1,
-h6 {
-  color: white;
+.dark-mode footer {
+  background-color: #0a0a0aff;
+}
+
+.dark-mode p {
+  color: #eee3c1ff;
+}
+
+.dark-mode .hello {
+  color: #eee3c1ff;
+}
+
+.dark-mode h1 {
+  color: #eee3c1ff;
 }
 
 .dark-mode h6 {
-  color: white;
+  color: #eee3c1ff;
 }
 
 .dark-mode h3 {
-  color: #efc862;
+  color: #d1342fff;
 }
 
 .dark-mode h2 {
-  color: #efc862;
+  color: #d1342fff;
 }
 
 .dark-mode .bar {
@@ -70,9 +86,18 @@ h6 {
 }
 
 .dark-mode .nav-links {
-  background-color: rgb(0, 0, 0);
+  background-color: #0a0a0aff;
 }
 
+.dark-mode .box-container .box {
+  border: 1rem solid #323132;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  background: #323132;
+}
+
+.dark-mode .box-container .box h3 {
+  color: #eee3c1ff;
+}
 /* end of dark-mode */
 
 /* Font styling */

@@ -1,0 +1,105 @@
+img {
+  max-width: 100%;
+  animation: introLoad 1s;
+}
+
+.grid_1-1 {
+  animation: moveDown 1s ease-in-out forwards;
+}
+
+h1 {
+  animation: moveDown 1s ease-in-out forwards;
+}
+
+@media (min-width: 600px) {
+  .grid_1-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .grid_5-3 {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    gap: 10px;
+  }
+
+  .grid_1-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+  }
+
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+  }
+
+  .element_3 {
+    order: 1;
+  }
+
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+  }
+  .flex-col :last-child {
+    margin-top: auto;
+  }
+
+  .grid_1-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  .grid_1-1-1-1 img {
+    align-self: stretch;
+    object-fit: cover;
+  }
+  .image1 {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  .image4 {
+    grid-column-end: span 2;
+  }
+  .image5 {
+    grid-row: 3;
+  }
+  .image6 {
+    grid-column: span 3;
+  }
+}
+
+@keyframes introLoad {
+  from {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes moveDown {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
