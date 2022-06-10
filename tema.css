@@ -1,14 +1,12 @@
 img {
   max-width: 100%;
-  animation: introLoad 1s;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-.grid_1-1 {
-  animation: moveDown 1s ease-in-out forwards;
-}
-
-h1 {
-  animation: moveDown 1s ease-in-out forwards;
+.link:hover {
+  transform: scale(1.1);
+  color: #efc862;
 }
 
 @media (min-width: 600px) {

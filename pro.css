@@ -23,7 +23,6 @@
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   cursor: pointer;
-  animation: moveDown 1s ease-in-out forwards;
 }
 
 .box-container .box img {
@@ -62,7 +61,6 @@
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     cursor: pointer;
-    animation: moveDown 1s ease-in-out forwards;
   }
 }
 
@@ -79,7 +77,6 @@
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     cursor: pointer;
-    animation: moveDown 1s ease-in-out forwards;
   }
 }
 
@@ -96,7 +93,6 @@
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     cursor: pointer;
-    animation: moveDown 1s ease-in-out forwards;
   }
 }
 
@@ -113,16 +109,5 @@
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     cursor: pointer;
-    animation: moveDown 1s ease-in-out forwards;
-  }
-}
-
-@keyframes moveDown {
-  from {
-    transform: translateY(-100px);
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
   }
 }
