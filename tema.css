@@ -14,6 +14,8 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+    animation: moveDown 1s ease-in-out forwards;
+    animation: introLoad 2s forwards;
   }
 
   .element_3 {
@@ -32,11 +34,13 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
+    animation: moveDown 1s ease-in-out forwards;
   }
 
   .grid_1-1-1-1 img {
     align-self: stretch;
     object-fit: cover;
+    animation: introLoad 2s forwards;
   }
   .image1 {
     grid-column: span 2;

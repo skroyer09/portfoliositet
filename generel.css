@@ -234,6 +234,10 @@ h6 {
     background-color: rgba(221, 221, 221, 0.142);
     transform: scale(1.1);
   }
+
+  h6 {
+    padding-top: 0px;
+  }
 }
 
 @media (max-width: 600px) {
