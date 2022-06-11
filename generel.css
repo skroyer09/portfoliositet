@@ -103,6 +103,10 @@ video {
 .dark-mode .box-container .box h3 {
   color: #eee3c1ff;
 }
+
+.dark-mode .footer-navn {
+  color: #eee3c1ff;
+}
 /* end of dark-mode */
 
 /* Font styling */
@@ -138,7 +142,7 @@ h1 {
 
 h6 {
   font-size: 14px;
-  letter-spacing: 1.5px;
+
   color: black;
   font-family: "poppins", sans-serif;
   font-weight: 400;
@@ -146,6 +150,8 @@ h6 {
   line-height: 30px;
   padding-top: 20px;
 }
+
+/* end of Font styling */
 
 /* Styling af navigationbar og logo */
 
@@ -156,7 +162,7 @@ h6 {
 
 .nav-links li {
   display: inline-block;
-  padding: 20px 60px 0px 60px;
+  padding: 20px 20px 0px 60px;
 }
 
 .nav-links li h6 {
@@ -196,6 +202,8 @@ h6 {
   gap: 13px;
   overflow-x: auto;
 }
+
+/* End of styling af navigationbar og logo */
 
 /* Burger Menu */
 
@@ -269,6 +277,8 @@ h6 {
   }
 }
 
+/* End of burger Menu */
+
 /* Footer design */
 
 footer {
@@ -277,7 +287,7 @@ footer {
   align-self: end;
   display: grid;
   grid-column: span 2;
-  height: 80px;
+  height: 50px;
 }
 
 .flex-row {
@@ -286,31 +296,12 @@ footer {
 }
 
 .footer-navn {
-  display: flex;
-  width: 75px;
   height: 30px;
   transition: transform 500ms;
   margin-top: 20px;
-  margin-left: 30px;
-}
-.footer-insta {
-  display: flex;
-  width: 30px;
-  height: 30px;
-  transition: transform 500ms;
-  margin-top: 20px;
-}
-.footer-insta:hover {
-  transform: scale(1.1);
 }
 
-.footer-telefon {
-  display: flex;
-  width: 115px;
-  height: 30px;
-  transition: transform 500ms;
-  margin-top: 20px;
-}
+/* Footer design */
 
 /* Burger menu */
 
@@ -397,27 +388,4 @@ header {
     font-style: normal;
     font-family: futura-pt, sans-serif;
   }
-}
-
-/* CSS til instagram ikonet */
-
-.fa {
-  padding: 10px;
-  font-size: 10px;
-  width: 20px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-  margin: 5px 2px;
-}
-
-/* hover effekt bliver lagt på */
-.fa:hover {
-  opacity: 0.7;
-}
-
-/* Instagram */
-.fa-instagram {
-  background: white;
-  color: #948d85;
 }

@@ -10,44 +10,14 @@ img {
 }
 
 @media (min-width: 600px) {
-  .grid_1-2 {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 10px;
-  }
-
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
   }
 
-  .grid_5-3 {
-    display: grid;
-    grid-template-columns: 5fr 3fr;
-    gap: 10px;
-  }
-
-  .grid_1-2 {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 10px;
-  }
-
-  .grid_2-1 {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 10px;
-  }
-
   .element_3 {
     order: 1;
-  }
-
-  .grid_1-1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
   }
 
   .flex-col {
