@@ -132,7 +132,6 @@ h2 {
 }
 
 h1 {
-  font-size: 45px;
   letter-spacing: 1.5px;
   color: black;
   font-weight: 700;
@@ -142,13 +141,12 @@ h1 {
 
 h6 {
   font-size: 14px;
-
+  letter-spacing: 1.5px;
   color: black;
   font-family: "poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
   line-height: 30px;
-  padding-top: 20px;
 }
 
 /* end of Font styling */
@@ -223,25 +221,6 @@ h6 {
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
   background-color: rgb(14, 13, 13);
-}
-
-@media (max-width: 450px) {
-  .navbar {
-    max-width: 1280px;
-    margin: 0 auto;
-    font-size: 0;
-    height: 70px;
-  }
-
-  .nav-links li h6:hover {
-    color: #efc862;
-    background-color: rgba(221, 221, 221, 0.142);
-    transform: scale(1.1);
-  }
-
-  h6 {
-    padding-top: 0px;
-  }
 }
 
 @media (max-width: 600px) {
