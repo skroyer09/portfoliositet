@@ -162,7 +162,11 @@ h6 {
 
 .nav-links li {
   display: inline-block;
-  padding: 20px 20px 0px 60px;
+  padding: 20px 60px 0px 60px;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
 }
 
 .nav-links li h6 {
