@@ -71,6 +71,10 @@ section {
     font-size: 0;
     height: 70px;
   }
+
+  .home .content h3 {
+    font-size: 3rem;
+  }
 }
 
 @keyframes moveDown {
