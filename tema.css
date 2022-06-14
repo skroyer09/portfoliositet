@@ -9,6 +9,8 @@ img {
   color: #efc862;
 }
 
+/* media queries  */
+
 @media (min-width: 600px) {
   .grid_1-1 {
     display: grid;
